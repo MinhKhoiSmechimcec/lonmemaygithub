@@ -22,7 +22,7 @@ else
 $(HELPER_NAME)_CODESIGN_FLAGS = -Sentitlements.plist
 endif
  
-$(HELPER_NAME)_CFLAGS = -fobjc-arc -I../Shared $(shell pkg-config --cflags libcrypto) -I../ChOma/src -I../Exploits/fastPathSign/src -I$(shell brew --prefix)/opt/libarchive/include
+$(HELPER_NAME)_CFLAGS = -fobjc-arc -I../Shared $(shell pkg-config --cflags libcrypto) -I../ChOma/src -I../Exploits/fastPathSign/src -I/usr/include
 
 $(HELPER_NAME)_INSTALL_PATH = /usr/local/bin
 $(HELPER_NAME)_LIBRARIES = archive
